@@ -1,0 +1,395 @@
+/*--------Сброс стилей по умолчанию--------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------------------------------------------------------*/
+body {
+    background-image: url("../images/backgroundimg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 36pt;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+}
+
+h3{
+    color:rgba(250, 250, 220,1);
+    font-size: 18pt;
+    text-align: left;
+	text-indent: 20px; /* Отступ первой строки в пикселах */
+    margin-left: 50px;
+}
+
+.map{
+    width: 80%;
+    height: auto;
+    float:center; /* Выравнивание*/
+    margin: 0 7px 7px 0; /* Отступы вокруг картинки */
+}
+
+.container1{
+   text-align: center;
+}
+
+/*--------------------------------Разметка основных страниц----------------------------------------------------*/
+header {
+    width: 100%;
+    height: auto;
+    background: rgba(25,70,70,0.4);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px; 
+    transition: 2s background;
+    /* position: fixed;
+    left: 0; */
+}
+
+header:hover {
+    background: rgba(25,70,70,0.8);
+}
+
+.colontitul{
+    width: auto;
+    height: auto;
+    background: rgba(230, 250, 219, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px; 
+    color: white;
+    text-align: left;
+    transition: 2s background;
+}
+
+.colontitul:hover {
+    background: rgba(250, 250, 220, 0.9);
+}
+
+
+main {
+    width:auto;
+    height: auto;
+
+    background: rgba(25,70,70, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    transition: 2s background; 
+    
+    color: rgb(250,245,220);
+    font-size: 14pt;
+    text-align: justify;
+}
+
+main:hover {
+    background: rgba(25,70,70,0.8);
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background: rgba(0,150,250,0.2);
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    transition: 2s background;    
+}
+
+footer:hover {
+    background: rgba(0,150,250,0.8);
+}
+/* Привязываю нижний колонтитул к нижнему краю */
+
+
+/*--------------Main Menu--------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.topmenu {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.topmenu li a, .submenu li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: #d8edff;
+  border-bottom: 1px solid transparent;
+  transition: .3s linear;
+}
+
+.topmenu li a:hover, .submenu li a:hover {
+  border-radius: 3px;
+  background:   #d8edff;
+  color: black; 
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+.topmenu li {
+  display: inline-block;
+  position: relative; /*отвечает за всплывание меню*/
+  z-index: 1000;
+  padding: 5px 0;
+ } 
+
+.submenu {
+  position: absolute;
+  padding: 15px 0 15px;
+  visibility: hidden;
+  opacity: 0; 
+  /* transition: .3s;     */
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);  
+  box-sizing: border-box; 
+
+  color: rgba(230,250,220,0.9);
+  background: rgba(25,70,70,0.9);    
+  transition: 2s background; /*подсветка пунктов всплывающего меню*/  
+} 
+
+.topmenu .submenu {
+    opacity: 0; /* По умолчанию скрываем подменю */
+    visibility: hidden;
+    transition: all .3s ease .15s; /* Добавляем анимацию 0.3 сек. и задержку в 0.15 сек. */
+}
+
+.topmenu li:hover .submenu {
+  visibility: visible; /* Показываем подменю при ховере */
+  opacity: 1;
+}  
+
+/*---------------------------Карусель------------------------------------*/
+ .owl-carousel .item {
+    background: gray;
+    padding: 2px;
+    margin: 2px;
+    z-index: 1;
+}
+/*---------------------Разметка страниц с боковым меню ------------------*/
+.container{
+margin: 50px 50px;
+}
+
+aside.str_animals {
+    width:15%;
+    float: left;
+    /* background: rgba(230, 250, 219, 0.5); 
+    transition: 2s background;   */
+}
+/* 
+aside.str_animals:hover {
+    background: rgba(25,70,70,0.9);
+}  */
+
+aside.str_animals li a{
+    text-decoration: none;  
+    color: rgb(250,245,220);
+    font-size: 18pt;
+    text-align: left;
+}
+
+aside.str_animals li a:hover{
+    border-radius: 3px;
+    background:   #d8edff;
+    color: black; 
+    transition: 2s background; 
+}
+
+main.str_animals1 {
+    width:85%;
+    height: auto;
+    float: right;
+
+    /* background: rgba(230, 250, 219, 0.5); */
+    margin-right: auto;
+    margin-left: auto;
+    transition: 2s background; 
+    
+    color: rgb(250,245,220);
+    font-size: 14pt;
+    text-align: justify;
+}
+
+main.str_animals1:hover {
+    background: rgba(25,70,70,0.9);
+}
+
+.text{
+    padding: 30px;    
+}
+
+.text p {
+    text-align: justify;
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+
+.text h3{
+    padding: 30px; 
+    font-size: 10pt; 
+    font-style: italic;
+}
+
+.clear{
+    clear: both;
+}
+
+.myimg1{
+    width: 500px;
+    height: auto;
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+
+.up{
+    padding: 5px 30px;
+    border-radius: 3px;
+    background:   #d8edff;
+    color: black; 
+    transition: 2s background; 
+    text-decoration: none;  
+}
+/* .up:hover{
+    text-decoration: underline;  
+} */
+
+/* ----------------------------------------------------- */
+.contacts{
+    margin-left: 100px;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+/* ----------------------------------------------------- */
+.textonas{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.textonas p{
+    text-align: justify;
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+/* --------------------------Images--------------------- */
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left:0;
+}
+.icons1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:50px;
+}
+
+.icons2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:100px;
+}
+.icons3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:150px;
+}
+.icons0 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:200px;
+}
+
+.icons1:hover, .icons2:hover, .icons3:hover, .icons0:hover {
+    cursor: pointer; /*меняем вид курсоа при наведении на иконки связи*/
+}
+
+.imgmenu{
+    width: 300px;
+    height: 300px;  
+}
+
+.imgmenu:hover {
+    cursor: pointer; /*меняем вид курсоа при наведении на иконки связи*/
+}
+/* ---------------------------------------------------------- */
+.menu-animals{
+    width: 910px;
+    margin: auto;
+}

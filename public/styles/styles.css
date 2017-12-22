@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/*--------Сброс стилей по умолчанию--------------------*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 20px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, .headerdesign, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, .headerdesign, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*----------------------------------------------------------------------------------*/
+/*--------------Burger Menu--------------------------------------------------------------------------*/
+.burgerdesign, .hamburger, .cross {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  border: 0;
+  padding: 5px 15px 0px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.hamburger {
+  line-height: 45px;
+  font-size: 1.4em; }
+
+.cross {
+  font-size: 3em;
+  line-height: 65px; }
+
+/*color*/
+/*background before hover*/
+/*background after hover*/
+/*font-family all tabs*/
+/*Шрифт надписи Добро пожаловать в зоопарк*/
+.yellowcentertext, h1, .vitau, h2, h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fafadc;
+  text-align: center; }
+
+body {
+  background-image: url("../images/backgroundimg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0; }
+
+h1, .vitau {
+  font-size: 36pt; }
+
+h2 {
+  font-size: 30pt; }
+
+h3 {
+  font-size: 18pt;
+  margin-left: 50px; }
+
+.imgonas {
+  width: 100%;
+  height: auto;
+  float: center;
+  /* Выравнивание*/
+  margin: 7px 7px 7px 0;
+  /* Отступы вокруг картинки */ }
+
+.map {
+  width: 80%;
+  height: auto;
+  float: center;
+  /* Выравнивание*/
+  margin: 0 7px 7px 0;
+  /* Отступы вокруг картинки */ }
+
+.container1 {
+  text-align: center; }
+
+.headerdesign {
+  width: 100%;
+  height: auto;
+  background: rgba(25, 70, 70, 0.4);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  /* position: fixed;
+  left: 0; */ }
+
+.headerdesign:hover {
+  background: rgba(25, 70, 70, 0.8); }
+
+.topcolontitul, .colontitul, .colontitul1 {
+  width: 100%;
+  height: 30px;
+  background: rgba(230, 250, 220, 0.4);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding-top: 35px;
+  text-align: center;
+  -webkit-transition: 2s background;
+  transition: 2s background; }
+
+.colontitul {
+  padding-bottom: 25px; }
+
+.colontitul1 {
+  padding-bottom: 55px; }
+
+.headerdesign .colontitul:hover {
+  background: rgba(230, 250, 220, 0.9); }
+
+.headerdesign .contacts {
+  width: 50%;
+  color: black; }
+
+.headerdesign .colontitul1:hover {
+  background: rgba(230, 250, 220, 0.9); }
+
+main {
+  width: auto;
+  height: auto;
+  background: rgba(25, 70, 70, 0.4);
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  color: #fafadc;
+  font-size: 14pt;
+  text-align: justify; }
+
+main:hover {
+  background: rgba(25, 70, 70, 0.8); }
+
+footer {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 150, 250, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  -webkit-transition: 2s background;
+  transition: 2s background; }
+
+footer:hover {
+  background: rgba(0, 150, 250, 0.8); }
+
+/*--------------Main Menu--------------------------------------------------------------------------*/
+.headerdesign .menu {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center; }
+
+.headerdesign .menu a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 150, 250, 0.8);
+  background: rgba(25, 70, 70, 0.8);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  width: 200px; }
+
+.headerdesign .menu a:hover {
+  border-radius: 5px;
+  background: rgba(0, 150, 250, 0.8);
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px; }
+
+/*---------------------------Карусель------------------------------------*/
+.owl-carousel .item {
+  background: gray;
+  padding: 2px;
+  margin: 2px;
+  z-index: 1; }
+
+/*---------------------Разметка страниц с боковым меню ------------------*/
+.container {
+  margin: 50px 50px; }
+
+aside.str_animals {
+  width: 25%;
+  float: left; }
+
+aside.str_animals li a {
+  text-decoration: none;
+  color: #fafadc;
+  text-align: left; }
+
+aside.str_animals li a:hover {
+  border-radius: 3px;
+  background: rgba(0, 150, 250, 0.8);
+  color: black;
+  -webkit-transition: 2s background;
+  transition: 2s background; }
+
+main.str_animals1 {
+  width: 75%;
+  height: auto;
+  float: right;
+  /* background: rgba(230, 250, 219, 0.5); */
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  color: #fafadc;
+  font-size: 14pt;
+  text-align: justify; }
+
+main.str_animals1:hover {
+  background: rgba(25, 70, 70, 0.8); }
+
+.text {
+  padding: 30px; }
+
+.text p {
+  text-align: justify; }
+
+.text h3 {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  font-style: italic;
+  text-align: center;
+  font-size: 14pt; }
+  .text h3 a {
+    text-decoration: none;
+    color: rgba(0, 150, 250, 0.8);
+    font-size: 18pt; }
+  .text h3 a:hover {
+    cursor: pointer;
+    /*меняем вид курсоа при наведении на иконки связи*/
+    text-decoration: underline; }
+
+.clear {
+  clear: both; }
+
+.myimg1 {
+  width: 100%;
+  height: auto;
+  float: left;
+  /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0;
+  /* Отступы вокруг картинки */ }
+
+.up {
+  padding: 5px 30px;
+  border-radius: 3px;
+  background: rgba(230, 250, 220, 0.4);
+  color: black;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  text-decoration: none; }
+
+.up:hover {
+  cursor: pointer;
+  background: rgba(230, 250, 220, 0.9);
+  text-decoration: none; }
+
+/* ----------------------------------------------------- */
+.contacts {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: white; }
+
+/* ----------------------------------------------------- */
+.textonas {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.textonas p {
+  width: 100%;
+  text-align: justify; }
+
+/* --------------------------Images--------------------- */
+.logo {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 10px; }
+
+.icons1 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px; }
+
+.icons2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 100px; }
+
+.icons3 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 150px; }
+
+.icons0 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 200px; }
+
+.icons1:hover, .icons2:hover, .icons3:hover, .icons0:hover {
+  cursor: pointer;
+  /*меняем вид курсоа при наведении на иконки связи*/ }
+
+.imgmenu {
+  /* width: 300px;
+  height: 300px;   */
+  width: 33%;
+  height: auto; }
+
+.imgmenu:hover {
+  cursor: pointer;
+  /*меняем вид курсоа при наведении на иконки связи*/ }
+
+/* ---------------------------------------------------------- */
+.menu-animals {
+  /* width: 910px; */
+  width: 75%;
+  margin: auto; }
+
+/*--------------Saidbar Menu--------------------------------------------------------------------------*/
+.animals {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 16px; }
+
+.animals_menu, .animals li a, .animals .submenu li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 150, 250, 0.8);
+  border-bottom: 1px solid transparent;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  width: inherit; }
+
+.animals_menu_hover, .animals li a:hover, .animals .submenu li a:hover {
+  border-radius: 3px;
+  background: rgba(0, 150, 250, 0.8);
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px; }
+
+.animals li {
+  padding: 5px 0;
+  width: inherit; }
+
+.animals .submenu {
+  padding: 15px 0 15px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fafadc;
+  background: rgba(25, 70, 70, 0.8);
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  /*подсветка пунктов всплывающего меню*/ }
+
+/*----------------------------*/
+/* ----------------------------- */
+/*--------------------------- Tabs with bootstrap-------------------*/
+.tabsbootstrap {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px; }
+
+.nav-tabs {
+  margin-bottom: 15px; }
+
+nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  color: black;
+  cursor: default;
+  background-color: rgba(0, 150, 250, 0.8);
+  border: 1px solid #ddd;
+  border-bottom-color: transparent; }
+
+/*-------------------------------Tabs Into other Tabs--------------*/
+.tab-pane.fade {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border-radius: 5px;
+  margin: auto; }
+
+.korpus > div, .korpus > input {
+  display: none; }
+
+.korpus label {
+  padding: 10px;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px; }
+
+.korpus input[type="radio"]:checked + label {
+  background: #fff;
+  color: #555; }
+
+.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+  display: block;
+  padding: 10px; }
+
+.hrmammals {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  border-top: 1px solid #eee; }
+
+.labelradiovkl {
+  margin-bottom: 0px; }
+
+/*----------------------------- FlexBox---------------*/
+.my-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.my-flex-block {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }

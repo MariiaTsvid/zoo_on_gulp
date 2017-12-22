@@ -1,0 +1,27 @@
+/*--------------Burger Menu--------------------------------------------------------------------------*/
+.burgerdesign {
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  color:black;
+  border:0;
+  padding:5px 15px 0px 15px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}  
+
+.hamburger{    
+  @extend .burgerdesign;
+  line-height:45px;    
+  font-size:1.4em;    
+}
+
+.cross{
+  @extend .burgerdesign;
+  // padding:7px 15px 0px 15px;    
+  font-size:3em;
+  line-height:65px;
+}
