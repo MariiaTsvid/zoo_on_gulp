@@ -1,27 +1,29 @@
-/*--------------Burger Menu--------------------------------------------------------------------------*/
-.burgerdesign {
+.hoverCursor{
+  cursor: pointer; /*меняем вид курсоа при наведении на иконки связи*/
+}
+/* -------------------Gamburger-menu--------------------------- */
+@mixin burgerZnachok($sizeFont) {
+  font-size:$sizeFont;
+  position: absolute;
+  right:250px;    
+  top:45px;
   background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  color:black;
-  border:0;
-  padding:5px 15px 0px 15px;
   font-weight:bold;
-  cursor:pointer;
   outline:none;
   z-index:10000000000000;
-}  
-
-.hamburger{    
-  @extend .burgerdesign;
-  line-height:45px;    
-  font-size:1.4em;    
+  @extend .hoverCursor;
 }
 
+.hamburger{
+  @include burgerZnachok(2em);
+}
 .cross{
-  @extend .burgerdesign;
-  // padding:7px 15px 0px 15px;    
-  font-size:3em;
-  line-height:65px;
+  @include burgerZnachok(3em);
+}
+
+.hamburger.page_animals{
+  top:50px;
+}
+.cross.page_animals{
+  top:50px;
 }

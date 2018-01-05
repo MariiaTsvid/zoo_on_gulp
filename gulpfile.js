@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer');
+    autoprefixer = require('autoprefixer'),
+    precss = require('precss'),
+    cssnano = require('cssnano');
 
 var src_path_scss = './src/scss/*.scss',
     src_path_js = './src/js/*.js',
@@ -10,7 +12,7 @@ var src_path_scss = './src/scss/*.scss',
     src_path_lib = './src/lib/**/*.+(js|css)';
 
 gulp.task('sass', function(){
-    var processors = [autoprefixer];
+    var processors = [autoprefixer, precss, cssnano];
     gulp.src(src_path_scss)
     .pipe(sass())
     .pipe(postcss(processors))
