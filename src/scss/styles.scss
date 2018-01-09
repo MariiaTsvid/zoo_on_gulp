@@ -550,3 +550,35 @@ nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
 .tabs_name{
   color:white;
 }
+/*----------------Выдвижная панель------------------*/
+a:focus {
+  outline: none;
+}
+#panel {
+  background: $primary-color-after;
+  height: auto;
+  display: none;
+}
+.slide {
+  margin: 0;
+  padding: 0;
+  border-top: solid 4px black;
+  background: url("../images/up.png") no-repeat center;
+}
+.btn-slide {
+  background: url("../images/down.png") no-repeat center;
+  text-align: center;
+  width: 31px;
+  height: 31px;
+  padding: 10px 10px 0 0;
+  margin: 0 auto;
+  display: block;
+  font: bold 120%/100% Arial, Helvetica, sans-serif;
+  text-decoration: none;  
+  &:hover {
+    text-decoration: none;
+  }
+}
+.active {
+  background-position: right 50px;
+}
